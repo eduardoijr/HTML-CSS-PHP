@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <form method="POST" id="fcontato" action="">
+        <fieldset>
+            <legend id="usuario">Identificador do usuario</legend>
+                <label id="cnome">
+                    <p>Nome:</p> <input type="text" name="tname" id="cnome" size="20" maxlength="20" placeholder="Digite seu nome">
+                </label>
+                <p>Senha:</p> <input type="password" name="tsenha" id="csenha" size="20" maxlength="20" placeholder="Digite sua senha">
+                <p>E-mail:</p> <input type="email" name="temail" id="cemail" size="20" maxlength="20" placeholder="Digite seu email">
+                <br>
+                <fieldset id="sexo">
+                    <legend>Sexo:</legend>
+                         <input type="radio" name="tsexo" id="cmasc"> Masculino
+                         <input type="radio" name="tsexo" id="cfem"> Feminino
+                </fieldset>
+                <p>Data de nascimento</p> <input type="date" name="tdate" id="cdate">
+        </fieldset>
+    
+    
+        <fieldset>
+            <legend id="endereço">Enderço do usuario</legend>
+                <p>Logradouro</p> <input type="text" name="tendereço" id="cenderenço" size="13" maxlength="80" placeholder="RUA/TRAV/AV">
+                <p>Numero</p> <input type="number" name="tnumero" id="cnumero" min="0" max="99">
+                <label for="cEst"><p>Estado</p></label>
+                <select name="tEst" id="cEst">
+                   <option value="go">Goias</option>
+                   <option value="sp">Sao paulo</option>
+                   <option value="rj">Rio de Janeiro</option>
+                </select>
+                <p>Cidade</p>
+    
+        </fieldset>
+    
+        <fieldset>
+            <legend id="mensagem">Mensagem do usuario</legend>
+                <textarea name="tmsg" id="cmsg" cols="30" rows="10"></textarea>
+        </fieldset>
+    
+        <input type="submit" value="enviar">
+    
+    
+    </form>
+
+
+
+</body>
+</html>
